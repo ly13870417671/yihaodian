@@ -1,0 +1,72 @@
+#box {
+  position: absolute;
+  left: 185px;
+  top: 20px;
+  height: 279px;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  width: 335px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 222;
+  display: none;
+  overflow: hidden; }
+
+.tab_nav {
+  width: 335px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative; }
+  .tab_nav .tab_close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../imgs/sprite.png) no-repeat -66px -11px;
+    transition: transform 0.2s; }
+    .tab_nav .tab_close:hover {
+      transform: rotate(90deg); }
+  .tab_nav li {
+    border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding: 0px 10px;
+    background: #e5e5e5; }
+
+/* .tab_nav li:nth-child(3) {
+      border-right: 1px solid #e5e5e5!important;
+  } */
+.tab_list li dd {
+  float: left;
+  color: #666;
+  padding: 0 10px;
+  transition: all .3s;
+  line-height: 26px;
+  margin: 5px 0; }
+  .tab_list li dd:hover {
+    background: #ff5e5e;
+    color: #fff; }
+
+.tab_list li .bg {
+  background: #ff5e5e;
+  color: #fff; }
+
+.tab_list li dl {
+  padding: 2px 0;
+  line-height: 32px;
+  height: 32px; }
+  .tab_list li dl dt {
+    float: left;
+    margin-top: 2px;
+    width: 40px;
+    border-right: 1px dotted #ebebeb;
+    color: #999;
+    line-height: 30px;
+    text-align: center; }
+  .tab_list li dl dd {
+    float: left;
+    color: #666;
+    padding: 0 10px;
+    transition: all .3s; }

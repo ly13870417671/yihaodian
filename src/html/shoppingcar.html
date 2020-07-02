@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/shopping.css">
+    <link rel="stylesheet" href="../css/tab.css">
+    <link rel="stylesheet" href="../icon/iconfont3.css">
+    <link rel="stylesheet" href="../icon/iconfont.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-wrap">
+            <div class="header_l">
+                <a href="index.html"><i class="iconfont icon-shouye"></i>1号店首页 </a>
+            </div>
+
+
+            <ul class="header_r">
+                <div class="msgs">
+                    <li class="login">晚上好，请 <a href="login.html">登录</a></li>
+                    <li class="reg"><a href="reg.html">注册</a></li>
+                </div>
+                <!-- <li class="login">Hi,请 <a href="login.html">登录</a></li>
+                <li class="reg"><a href="reg.html">注册</a></li> -->
+                <li><i class="iconfont icon-tubiaolunkuo-"></i>我的订单</li>
+                <li class="menu">
+                    <!-- <a class="list" href="">客户服务<i class="iconfont icon-xiajiantou_huaban"></i></a> -->
+                    <div class="menu_list">
+                        <a class="list1" href="">客户服务<i class="iconfont btn11 icon-xiajiantou_huaban"></i><i
+                                class="iconfont btn22 icon-arrowTop"></i></a>
+                        <a class="list2" href="">包裹跟踪</a>
+                        <a class="list3" href="">在线退换货</a>
+                    </div>
+                </li>
+                <li><i class="iconfont icon-APP"></i>APP下载</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="logo-wrap">
+        <h1>
+            <a class="logo" href=""><img src="../imgs/logo.png" alt=""></a>
+            <a class="logo_txt" href=""><img src="../imgs/logo_txt.png" alt=""></a>
+        </h1>
+        <em class="area_txt float_left">配送至：</em>
+        <div class="address">
+            <div class="area_name">
+                <span>
+                    <em class="onecity">上海</em>
+                    <i>|</i>
+                    <em class="twocity">静安区</em>
+                    <i>|</i>
+                    <em class="threecity">城区</em>
+                    <i class="iconfont icon-xiajiantou_huaban"></i>
+                </span>
+            </div>
+        </div>
+
+        <div id="box">
+            <ul class="tab_nav">
+                <li>上海</li>
+                <li>宝安区</li>
+                <li>城区</li>
+                <span class="tab_close"></span>
+            </ul>
+
+            <ul class="tab_list">
+
+                <li>
+                    <dl>
+                        <dt>华北:</dt>
+                        <dd>北京</dd>
+                        <dd>天津</dd>
+                        <dd>河北</dd>
+                        <dd>山西</dd>
+                        <dd>内蒙古</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>华东:</dt>
+                        <dd class="bg">上海</dd>
+                        <dd>江苏</dd>
+                        <dd>浙江</dd>
+                        <dd>安徽</dd>
+                        <dd>福建</dd>
+                        <dd>山东</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>华南:</dt>
+                        <dd>广东</dd>
+                        <dd>广西</dd>
+                        <dd>海南</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>华中：</dt>
+                        <dd>江西</dd>
+                        <dd>河南</dd>
+                        <dd>湖北</dd>
+                        <dd>湖南</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>西南：</dt>
+                        <dd>重庆</dd>
+                        <dd>四川</dd>
+                        <dd>贵州</dd>
+                        <dd>云南</dd>
+                        <dd>西藏</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>西北：</dt>
+                        <dd>陕西</dd>
+                        <dd>甘肃</dd>
+                        <dd>青海</dd>
+                        <dd>宁夏</dd>
+                        <dd>新疆</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>东北：</dt>
+                        <dd>辽宁</dd>
+                        <dd>吉林</dd>
+                        <dd>黑龙江</dd>
+                    </dl>
+                </li>
+
+
+                <li>
+                    <dd>宝山区</dd>
+                    <dd>长宁区</dd>
+                    <dd>崇明区</dd>
+                    <dd>奉贤区</dd>
+                    <dd>黄浦区</dd>
+                    <dd>虹口区</dd>
+                    <dd>嘉定区</dd>
+                    <dd class="bg">静安区</dd>
+                    <dd>金山区</dd>
+                    <dd>闵行区</dd>
+                    <dd>浦东新区</dd>
+                    <dd>普陀区</dd>
+                    <dd>青浦区</dd>
+                    <dd>松江区</dd>
+                    <dd>徐汇区</dd>
+                    <dd>杨浦区</dd>
+                    <dd>闸北区</dd>
+                </li>
+
+                <li>
+                    <dd class="bg">城区</dd>
+                    <dd>大宁路街道</dd>
+                    <dd>共和新路街道</dd>
+                    <dd>北站街道</dd>
+                    <dd>彭浦镇</dd>
+                    <dd>芷江西路街道</dd>
+                    <dd>临汾路街道</dd>
+                    <dd>曹家渡街道</dd>
+                    <dd>静安寺街道</dd>
+                    <dd>南京西路街道</dd>
+                    <dd>石门二路街道</dd>
+                    <dd>宝山路街道</dd>
+                    <dd>江宁路街道</dd>
+                    <dd>天目西路街道</dd>
+                    <dd>彭浦新村街道</dd>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input class="search_txt" type="text" placeholder="请输入关键字">
+            <a class="search_btn" href=""><i class="iconfont icon-sousuo"></i></a>
+        </div>
+    </div>
+
+    <div class="con-wrap">
+        <div class="con_tit">
+            <span class="checkbox">
+                <input type="checkbox" class="check_all all">全选
+                <!-- <a class="check_all" href="javascript:;"></a>全选 -->
+            </span>
+            <span class="tit">商品信息</span>
+            <span class="price">单价(元)</span>
+            <span class="num">数量</span>
+            <span class="total">小计(元)</span>
+            <span class="act">操作</span>
+        </div>
+
+    </div>
+
+    <div id="pay">
+        <div class="pay-wrap">
+            <div class="pay_l">
+                <span>
+                    <input type="checkbox" class="check_all all">
+                    <label class="pay_all">
+                        全选 (共<b class="count_num">2</b>件)
+                    </label>
+                </span>
+                <em>|</em>
+                <span class="pay_del">批量删除</span>
+            </div>
+            <div class="pay_r">
+                <div class="pay_choose">
+                    <span>已选商品<b class="count">2</b>件 </span>
+                    <a href="">预览</a>
+                    <em>|</em>
+                </div>
+                <div class="pay_price">
+                    合计:
+                    <span>￥</span>
+                    <em id="all_money">0.00</em>
+                    <i class="iconfont icon-arrowTop "></i>
+                    <div class="pay_none">
+                        <li>原价: <span>98.00</span> </li>
+                        <li>优惠: <b>0.00</b></li>
+                        <li>运费：不含，以结算页为准</li>
+                    </div>
+                </div>
+                <a class="checkout_btn" href="">去结算</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="like-wrap">
+        <h4><i class="iconfont icon-cainixihuan "></i>猜您喜欢</h4>
+        <p class="likes">实时推荐最适合您的商品</p>
+        <!-- <div class="like_list">
+            <div class="sale_scroll">
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like01.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥399.0</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">蓓慈(beici)全自动按摩电动足浴盆洗脚盆泡脚盆小米白泡脚桶吴昕同款泡脚神器家用加热恒温 BZ525A</a>
+                        </p>
+                    </dd>
+
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like02.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥11.8</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">马来西亚进口 可康cocon多口味椰果肉果冻芒果布丁 休闲食品儿童零食80g*6杯装</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like03.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥11.8</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">韩国进口ZEK芝士深海鳕鱼肠鱼肉火腿肠海味小吃儿童健康即食营养休闲零食 105g</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like04.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥42.9</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">韩国进口 海牌海苔 香脆紫菜烤海苔 休闲零食儿童零食经典原味2g*32包</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like13.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥330.0</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">迪奥（Dior）烈艳蓝金唇膏-哑光999# 3.5g 传奇红（口红 正红色 传奇红 赠精美礼盒）</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like11.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou"></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥12.9</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">陕西绿心猕猴桃奇异果 10个装 单果100-120g 新鲜水果</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like12.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥29.9</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">淘鲜团 智利三文鱼刺身 100g 冷冻刺身 解冻即食 asc认证 富含Ω3 海鲜水产 寿司食材</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like08.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥15.8</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">移速（MOVE SPEED）4GB U盘 USB2.0 招标投标小u盘 迷你便携 车载电脑手机通用优盘 黑武士系列</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like09.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥20.87</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">飞雕（FEIDIAO）开关插座面板 电脑网线插座（超五类） 网络插座面板 86型A3嘉润白</a>
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="sale_item">
+                    <dt>
+                        <a href=""><img src="./images/shoppingcar/like10.jpg" alt=""></a>
+                        <div class="add_shopcar">
+                            <i class="iconfont icon-shoucangjiagou "></i>
+                        </div>
+                        <p class="car_inner">加入购物车</p>
+                    </dt>
+                    <dd>
+                        <p class="p_price">
+                            <span>￥41.67</span>
+                        </p>
+
+                        <p class="p_tit">
+                            <a href="">西门子（SIEMENS）开关插座面板 电源插座睿致系列象牙白钛银睿智插座 五孔二三插</a>
+                        </p>
+                    </dd>
+                </dl>
+
+
+
+            </div>
+            <div class="view_dot">
+                <span class="cur"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div> -->
+
+        <div class="like_list">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sale_scroll">
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sale_scroll">
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sale_scroll">
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+
+
+            <div class=" view_dot ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div class="footer-wrap">
+            <div class="footer_list">
+                <li>
+                    <dl>
+                        <dt><i class="iconfont icon-zhengpinbaozhangxian"></i></dt>
+                        <dd>
+                            <h6>正品保障</h6>
+                            <span>正品行货，放心选购</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><i class="iconfont icon-99yuanbaoyou"></i></dt>
+                        <dd>
+                            <h6>满99包邮</h6>
+                            <span>满99 免运费</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><i class="iconfont icon-zan"></i></dt>
+                        <dd>
+                            <h6>售后无忧</h6>
+                            <span>七天无理由退货</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><i class="iconfont icon-icon-  "></i></dt>
+                        <dd>
+                            <h6>准时送达</h6>
+                            <span>收货时间由你做主</span>
+                        </dd>
+                    </dl>
+                </li>
+            </div>
+            <div class="footer_links">
+                <div class="links_l">
+                    <ul>
+                        <li>新手入门</li>
+                        <li><a href="">购物流程</a></li>
+                        <li><a href="">会员制度</a></li>
+                        <li><a href="">订单查询</a></li>
+                        <li><a href="">服务协议及隐私说明</a></li>
+                        <li><a href="">网站地图</a></li>
+                    </ul>
+                    <ul>
+                        <li>支付方式</li>
+                        <li><a href="">货到付款</a></li>
+                        <li><a href="">网上支付</a></li>
+                        <li><a href="">礼品卡支付</a></li>
+                        <li><a href="">其他支付</a></li>
+                    </ul>
+                    <ul>
+                        <li>配送服务</li>
+                        <li><a href="">配送进度查询</a></li>
+                        <li><a href="">商品验货与签收</a></li>
+                    </ul>
+                    <ul>
+                        <li>相关规则</li>
+                        <li><a href="">平台规则</a></li>
+                        <li><a href="">退换货政策</a></li>
+                        <li><a href="">发票制度</a></li>
+                        <li><a href="">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="links_r">
+                    <dl>
+                        <dt>app更优惠</dt>
+                        <dd><img src="../imgs/appimg.png" alt=""></dd>
+                    </dl>
+                    <dl>
+                        <dt>加微信查订单</dt>
+                        <dd><img src="../imgs/weixingimg.jpg" alt=""></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottoms">
+        <div class="bottoms-wrap">
+            <ul>
+                <li><a href="">沪ICP备16050468号</a></li>
+                <li><a href="">经营证照</a></li>
+                <li><a href="">互联网药品信息服务资格证(沪)-经营性-2017-0006</a></li>
+                <li><a href="">违法和不良信息举报电话：4006063968</a></li>
+                <li><a href="">沪B2-20170039</a></li>
+                <li><a href=""> 沪公网安备 31010502002939号</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">出版物经营许可证</a></li>
+                <li class="clear_bg"><a href="">增值电信业务经营许可证</a></li>
+            </ul>
+            <p>Copyright© 1号店网上超市 2007-2019，All Rights Reserved</p>
+            <div class="bottoms_icons">
+                <a href=""><img src="../imgs/bottoms01.jpg" alt=""></a>
+                <a href=""><img src="../imgs/bottoms02.png" alt=""></a>
+                <a href=""><img src="../imgs/bottoms03.jpg" alt=""></a>
+                <a href=""><img src="../imgs/bottoms04.jpg" alt=""></a>
+                <a href=""><img src="../imgs/bottoms05.png" alt=""></a>
+                <a href=""><img src="../imgs/bottoms06.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs_wrap">
+        <a class="tabs_del" href="javascript:;">
+            <i class="iconfont icon-shanchufenlei "></i>
+            <em>最近删除</em>
+            <b id="dels">0</b>
+        </a>
+        <a class="backTop" href="">
+            <i class="iconfont icon-arrowTop "></i>
+            <em>返回顶部</em>
+        </a>
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.view_dot',
+                bulletActiveClass: 'actives',
+            },
+        })
+    </script>
+
+</body>
+<script src="../script/jquery-3.2.1.min.js"></script>
+
+<script src="../script/shoppingcar.js"></script>
+<script src="../script/mycar.js"></script>
+<script src="../script/cookie.js"></script>
+
+
+</html>

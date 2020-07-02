@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../icon/iconfont3.css">
+    <link rel="stylesheet" href="../icon/iconfont.css">
+    <link rel="stylesheet" href="../icon/iconfont2.css">
+
+    <!-- <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./icon1/iconfont.css">
+    <link rel="stylesheet" href="./icon2/iconfont.css"> -->
+</head>
+
+<body>
+    <div id="header">
+        <h1><img src="../imgs/loginlogo.jpg" alt=""></h1>
+        <div class="header_r">
+            <span>您好，欢迎光临1号店! <a id="login" href="login.html">请登录</a></span>
+
+            <div class="box1">
+                <span class="appear"> <i class="iconfont icon-earth "></i><a href="">帮助中心</a><i
+                        class="iconfont icon-xiala "></i> </span>
+                <ul class="menu">
+                    <li><a href="#">包裹跟踪</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">在线退换货</a></li>
+                    <li class="clear_border"><a href="#">在线投诉</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="con">
+        <div class="img-box">
+            <img src="../imgs/login_pic.png" alt="">
+        </div>
+        <div class="login-box">
+            <div class="con-box">
+                <div class="tit">
+                    <div id="msg"></div>
+                    <h3>1号店用户登录 <a href="reg.html">注册新账号</a> </h3>
+                    <div class="input01">
+                        <input id="username" name="user" type="text" placeholder="邮箱/手机/用户名">
+                        <i class="iconfont icon-denglu "></i>
+                    </div>
+                    <div class="input02">
+                        <input id="pass" name="pass" type="text" placeholder="密码">
+                        <i class="iconfont icon-mima "></i>
+                    </div>
+
+
+                    <div class="auto">
+                        <input type="checkbox">
+                        <i class="rem">记住密码</i>
+                        <a href="">忘记密码?</a>
+                    </div>
+                    <a id="btn" href="javascript:;">登录</a>
+                    <!-- <input id="btn" type="button" value="登录"> -->
+                    <p>更多合作网站登录</p>
+                    <div class="btn_img">
+                        <ul>
+                            <li><i class="iconfont icon-zhifubao "></i> </li>
+                            <li><i class="iconfont icon-jingdong-"></i></li>
+                            <li><i class="iconfont icon-weixin"></i></li>
+                            <li><i class="iconfont icon-sr_baidu "></i></li>
+                        </ul>
+                        <span class="more">
+                            更多网站合作<i class="iconfont icon-xiala"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer-wrap">
+            <ul class="footer_t">
+                <li><a href="">沪ICP备16050468号</a></li>
+                <li><a href="">沪B2-20170039</a></li>
+                <li class="clear_bg"><a href="">营业执照</a></li>
+            </ul>
+            <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="../script/jquery-3.2.1.min.js"></script>
+<script src="../script/login.js"></script>
+<script src="../script/cookie.js"></script>
+
+<script>
+
+    //登录就是获取登录的用户名和密码传到后台
+    $("#btn").click(() => {
+        //获取用户名和密码
+        var username = $("[name='user']").val()
+        var password = $("[name='pass']").val()
+        //console.log(username, password);
+        //发送ajax，传输用户名和密码
+        $.ajax({
+            url: "./login.html",
+            type: "get",
+            dataType: "json",
+            data: {
+                username,
+                password
+            },
+            success: res => {
+                console.log(res);
+                if (res.meta.status == 200) {
+                    alert(res.meta.msg)
+                    location.href = '/public'
+                }
+                else {
+                    alert(res.meta.msg)
+                    return
+                }
+            }
+        })
+    })
+</script>

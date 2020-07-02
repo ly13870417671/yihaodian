@@ -1,0 +1,86 @@
+#box {
+    position: absolute;
+    left: 185px;
+    top: 20px;
+    height: 279px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: 335px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 222;
+    display: none;
+    overflow: hidden;
+  }
+  .tab_nav {
+    width: 335px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    .tab_close {
+      position: absolute;
+      right: 12px;
+      top: 10px;
+      display: block;
+      width: 13px;
+      height: 13px;
+      background: url(../imgs/sprite.png)no-repeat -66px -11px;
+      transition: transform 0.2s;
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+    li {
+      border-left: 1px solid #e5e5e5;
+      border-top: 1px solid #e5e5e5;
+      padding: 0px 10px;
+      background: #e5e5e5;
+    }
+  }
+  /* .tab_nav li:nth-child(3) {
+      border-right: 1px solid #e5e5e5!important;
+  } */
+  .tab_list {
+    li {
+      dd {
+        float: left;
+        color: #666;
+        padding: 0 10px;
+        transition: all .3s;
+        line-height: 26px;
+        margin: 5px 0;
+        
+        &:hover {
+          background: #ff5e5e;
+          color: #fff;
+        }
+      }
+      .bg {
+        background: #ff5e5e;
+        color: #fff;
+      }
+      dl {
+        padding: 2px 0;
+        line-height: 32px;
+        height: 32px;
+        dt {
+          float: left;
+          margin-top: 2px;
+          width: 40px;
+          border-right: 1px dotted #ebebeb;
+          color: #999;
+          line-height: 30px;
+          text-align: center;
+        }
+        
+        dd {
+          float: left;
+          color: #666;
+          padding: 0 10px;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+  

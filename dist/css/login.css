@@ -1,0 +1,236 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfc;
+  overflow-x: hidden; }
+
+#header {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #e1e1e1; }
+  #header h1 {
+    float: left;
+    width: 145px;
+    height: 55px;
+    margin-left: 74px;
+    padding-top: 12px; }
+  #header img {
+    width: 100%;
+    height: 100%; }
+
+.header_r {
+  float: right;
+  padding-top: 19px; }
+  .header_r span {
+    font-size: 12px;
+    color: #999999;
+    margin-right: 30px; }
+
+#login {
+  padding-left: 15px;
+  color: #0066cc; }
+  #login:hover {
+    color: red; }
+
+.box1 {
+  width: 122px;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 auto;
+  float: right;
+  margin-right: 75px; }
+  .box1 .appear {
+    text-align: center;
+    display: block; }
+    .box1 .appear a {
+      color: #333333; }
+  .box1:hover .menu {
+    display: block; }
+
+.menu {
+  width: 90px;
+  height: 120px;
+  background-color: #fff;
+  display: none;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #cccccc; }
+  .menu li {
+    margin: 4px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #f1f1f1;
+    line-height: 20px; }
+  .menu a {
+    width: 100%;
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px; }
+
+li:hover a {
+  color: red; }
+
+#con {
+  width: 100%;
+  height: 430px; }
+
+.img-box {
+  float: left;
+  width: 770px;
+  height: 430px;
+  position: relative; }
+  .img-box img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; }
+
+.login-box {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  float: left;
+  margin-top: 22px;
+  position: relative; }
+  .login-box .con-box {
+    width: 328px;
+    margin: 0 auto; }
+  .login-box #msg {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 400px;
+    height: 20px;
+    text-align: center; }
+  .login-box h3 {
+    width: 328px;
+    margin-top: 54px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666; }
+    .login-box h3 a {
+      font-weight: normal;
+      color: #0066cc;
+      float: right;
+      font-size: 12px; }
+      .login-box h3 a:hover {
+        color: #ff3c3c; }
+  .login-box .input01 {
+    position: relative; }
+  .login-box .input02 {
+    position: relative; }
+  .login-box p {
+    color: #666666;
+    font-size: 12px; }
+
+.input01 .icon-denglu, .input02 .icon-mima {
+  font-size: 22px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #b4b4b4; }
+
+.con-box i {
+  width: 66px;
+  height: 52px; }
+
+#username, #pass {
+  width: 262px;
+  height: 52px;
+  border: 1px solid #dedede;
+  margin: 5px 0;
+  position: relative;
+  padding-left: 66px; }
+
+#btn {
+  width: 328px;
+  height: 52px;
+  line-height: 52px;
+  border: 0;
+  background-color: #ff3c3c;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  text-align: center; }
+
+.auto {
+  width: 328px;
+  height: 34px;
+  line-height: 34px; }
+  .auto i {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 6px; }
+  .auto a {
+    float: right;
+    font-size: 12px;
+    color: #999999;
+    padding-right: 6px; }
+
+.btn_img ul {
+  float: left;
+  width: 188px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.btn_img .iconfont {
+  font-size: 34px; }
+
+.btn_img .icon-xiala {
+  font-size: 14px; }
+
+.icon-zhifubao {
+  color: #10a8ff; }
+
+.icon-jingdong- {
+  color: #c81825; }
+
+.icon-weixin {
+  color: #00cc00; }
+
+.icon-sr_baidu {
+  color: #10a8ff; }
+
+.more {
+  width: 125px;
+  height: 45px;
+  line-height: 45px;
+  float: right;
+  font-size: 12px;
+  text-align: center; }
+
+#footer {
+  border-top: 1px solid #f4f4f4;
+  width: 100%;
+  height: 61px;
+  position: relative; }
+  #footer p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #333333;
+    float: left; }
+
+.footer-wrap {
+  width: 328px;
+  height: 61px;
+  margin: 0 auto; }
+
+.footer_t {
+  float: left;
+  margin-top: 15px;
+  padding-left: 15px; }
+  .footer_t li {
+    float: left;
+    background: url(../imgs/border.png) no-repeat right;
+    padding: 0 7px;
+    font-size: 12px; }
+    .footer_t li a {
+      color: #333333; }
+      .footer_t li a:hover {
+        color: #ff3c3c; }

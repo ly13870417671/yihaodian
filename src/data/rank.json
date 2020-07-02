@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Driscoll's 怡颗莓 当季云南蓝莓原箱12盒装 约125g/盒",
+        "imgurl": "../imgs/r_list01.jpg",
+        "price": "￥77.9",
+        "names": "iconss icon_one",
+        "code": "abc44"
+    },
+    {
+        "title": "Zespri佳沛 新西兰阳光金奇异果 16个礼盒装 经典36号果",
+        "imgurl": "../imgs/rink02.jpg",
+        "price": "￥129",
+        "names": "iconss icon_two",
+        "code": "abc47"
+    },
+    {
+        "title": "【第二件减15元】墨西哥进口牛油果4个装 单果约120-150g",
+        "imgurl": "../imgs/r_list02.jpg",
+        "price": "￥28.8",
+        "names": "iconss icon_three",
+        "code": "abc45"
+    },
+    {
+        "title": "佳农 进口香蕉 2kg（约10-12根） 单根独立包装 厄瓜多尔进",
+        "imgurl": "../imgs/ranking04.jpg",
+        "price": "￥39.9",
+        "names": "icon_four",
+        "code": "abc46"
+    },
+    {
+        "title": "烟台红富士苹果 12个 净重2.6kg以上 单果190-240g 新生",
+        "imgurl": "../imgs/ranking05.jpg",
+        "price": "￥39.9",
+        "names": "icon_five",
+        "code": "abc48"
+    }
+]
